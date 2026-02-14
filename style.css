@@ -1,0 +1,168 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#head {
+    background-color: green;
+    padding: 10px;;
+    text-align: center;
+    color: white;
+}
+
+.nav {    
+    background-color: #EBE1D1;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.nav a {
+    text-decoration: none;
+    color: green;
+    padding-left: 5px;
+
+    
+}
+
+section {
+    margin-left: 30px;
+    margin-right: 10px;
+    border-radius: 8px; 
+    background-color: #EBE1D1;
+    color: black;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.left-sections {
+    flex: 3;
+    color:white;
+}
+
+.side-info {
+    flex: 2;
+    background: #EBE1D1;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius : 8px; 
+}
+
+
+#overview { 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+#overview img{
+   width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+#schedule {
+    padding: 15px;
+    margin-top: 20px;
+    
+}
+
+#location{
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#faq {
+    padding: 15px;
+    margin-top: 20px;
+    
+}
+
+button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+.answer {
+        display: none; /* default: hidden */
+        margin-left: 15px;
+        color: #333;
+}
+
+#tech-demo {
+    margin-left: 30px;
+    margin-right: 10px;
+    border-radius: 8px;
+    padding-left: 15px;
+}
+
+
+pre{
+    background-color: green;
+   margin-right: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: green;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+/* ========= MOBILE RESPONSIVE ========= */
+@media (max-width: 600px) {
+
+    /* Stack sidebar under content */
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    /* Navigation links become vertical */
+    nav a {
+        display: block;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    /* Reduce header text size */
+    #head h1 {
+        font-size: 20px;
+    }
+
+    #head p {
+        font-size: 14px;
+    }
+
+    /* Adjust sections spacing */
+    section {
+        margin: 10px;
+        padding: 12px;
+    }
+
+    /* Sidebar spacing */
+    .side-info {
+        margin: 10px;
+    }
+
+    /* Smaller text for mobile */
+    body {
+        font-size: 14px;
+    }
+
+    /* Buttons full width */
+    button {
+        width: 100%;
+    }
+}
+
+
+
+
